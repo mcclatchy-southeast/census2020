@@ -10,7 +10,7 @@ Accept where noted below, the following information is specific to data for Nort
 |--|--|--|--|
 | county | 100 | 100 | 100
 | tracts | 1,563 | 2,195 | 2,672
-| blocks | 232,403 | 288,987 | 236,638
+| blocks | 232,403 | 288,987 | 236,638 |
 More detail on basic Census geographies, counts and other NC-specific information [here](https://www.census.gov/geographies/reference-files/2010/geo/state-local-geo-guides-2010/north-carolina.html) and [here](https://www.census.gov/geographies/reference-files/time-series/geo/tallies.2000.html).
 
 ### Frequently used summary levels
@@ -27,7 +27,7 @@ More detail on basic Census geographies, counts and other NC-specific informatio
 
 
 ### File locations
-|File name| File type | Data dictionary
+|File name| File type | Data dictionary |
 |--|--|--|--|
 |[2000 redistricting file](https://www2.census.gov/census_2000/datasets/redistricting_file--pl_94-171/)| fixed-width and comma-delimited txt files | [Technical documentation](https://www.census.gov/prod/cen2000/doc/pl-00-1.pdf#page=61) |
 |[2010 redistricting file](https://www2.census.gov/census_2010/01-Redistricting_File--PL_94-171/)| fixed-width and comma-delimited txt files | [Technical documentation](https://www2.census.gov/programs-surveys/decennial/rdo/about/2010-census-programs/2010Census_pl94-171_techdoc.pdf#page=40) |
