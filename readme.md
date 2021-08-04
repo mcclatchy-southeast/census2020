@@ -16,6 +16,8 @@ Accept where noted below, the following information is specific to data for Nort
 
 [**2010 race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level. *NOTE: These totals are directly from the 2010 Census redistricting file and not weighted or aggregated based on the block assignment file.*
 
+[**2010 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level. *NOTE: These totals are directly from the 2010 Census redistricting file and not weighted or aggregated based on the block assignment file.*
+
 ## Quick reference
 
 ### Geographic area changes over time
@@ -47,7 +49,9 @@ More detail on basic Census geographies, counts and other NC-specific informatio
 | [2010 redistricting file](https://www2.census.gov/census_2010/01-Redistricting_File--PL_94-171/)| fixed-width and comma-delimited txt files | [Technical documentation](https://www2.census.gov/programs-surveys/decennial/rdo/about/2010-census-programs/2010Census_pl94-171_techdoc.pdf#page=40) |
 | [2020 redistricting file](https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/)| pipe-delimted txt files | [Technical documentation](https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/summary-file/2020Census_PL94_171Redistricting_StatesTechDoc_English.pdf#page=99) |
 | [2010/2020 block shapefile](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2020&layergroup=Blocks%20%282020%29)| ESRI shapefile | [Notes](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) |
-| [Block assignment files](https://www.census.gov/geographies/reference-files/time-series/geo/block-assignment-files.html)| pipe-delimted txt files | [File record layout](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/2020-census-block-record-layout.html) |
+| [Block assignment files](https://www.census.gov/geographies/reference-files/time-series/geo/block-assignment-files.html)| pipe-delimited txt files | [File record layout](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/2020-census-block-record-layout.html) |
+| [2010 Name lookup tables](https://www.census.gov/geographies/reference-files/time-series/geo/name-lookup-tables.2010.html) | pipe-delimited txt files | [File record layout](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/nlt-record-layouts.html) |
+| [2020 Name lookup tables](https://www.census.gov/geographies/reference-files/time-series/geo/name-lookup-tables.2020.html) | pipe-delimited txt files | [File record layout](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/nlt-record-layouts.html) |
 
 ## Other states
 Info coming soon for Mississippi, Georgia, South Carolina and Alabama.
