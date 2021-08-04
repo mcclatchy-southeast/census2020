@@ -54,4 +54,12 @@ More detail on basic Census geographies, counts and other NC-specific informatio
 | [2020 Name lookup tables](https://www.census.gov/geographies/reference-files/time-series/geo/name-lookup-tables.2020.html) | pipe-delimited txt files | [File record layout](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/nlt-record-layouts.html) |
 
 ## Other states
-Info coming soon for Mississippi, Georgia, South Carolina and Alabama.
+Resources for other newsrooms in McClatchty Southeast.
+
+**2010 Mississippi race and ethnicity, by county** *COMING SOON*
+
+**2010 Georgia race and ethnicity, by county** *COMING SOON*
+
+**2010 South Carolina race and ethnicity, by county** *COMING SOON*
+
+**2010 Alabama race and ethnicity, by county** *COMING SOON*
