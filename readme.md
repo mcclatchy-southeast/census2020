@@ -4,6 +4,8 @@ By Aug. 16, the U.S. Census Bureau will release the [2020 redistricting data sum
 
 Accept where noted below, the following information is specific to data for North Carolina.
 
+*NOTE: The data below is preliminary and for planning purposes.*
+
 ## Data files
 
 [**NC block assignment file, with weights**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_baf_2010_2010_weighted.csv) Used to remap 2010 population counts to the redrawn 2020 block for aggregation up to the tract level. Weights are calculated using the intersection of each 2010 block with the 2020 block divided by the total area of the 2010 block ( `AREALAND_INT` / `AREALAND_2010` ).
