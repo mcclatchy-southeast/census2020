@@ -136,7 +136,7 @@ But here's a look at how those derived totals based on `land_weight` compare on 
 
 ## 2010 race and ethnicity, weighted/aggregated to 2020 tracts
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2010_rc_eth_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_tracts_2010_rc_eth_weighted.csv)
-Select columns from 2010 population counts of race and ethnicity, remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts. *NOTE: Some tracts include fractional values in population totals due to the weights applied at the block level. For more details on the methodology, see the file on 2010 race and ethnicity, weighted to 2020 blocks.*
+Select columns from 2010 population counts of race and ethnicity, remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts. *NOTE: Some tracts include fractional values in population totals due to the weights applied at the block level. For more details on the methodology, see [the section in the file on 2010 race and ethnicity, weighted to 2020 blocks](https://github.com/mcclatchy-southeast/census2020/tree/main/data#methodology).*
 
 ## 2010 race and ethnicity, by county
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_county_2010_rc_eth.csv)
