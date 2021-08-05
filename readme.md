@@ -41,6 +41,12 @@ More detail on basic Census geographies, counts and other NC-specific informatio
 | NC Senate district | 610 |
 | NC House district | 620 |
 
+### Geographic identifiers
+The Census uses [geographic identifiers](https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html), or GEOIDs, for each of its geographic shapes.  The position of the number in every ID corresponds to a specific subdivision of a shape (think nesting dolls).
+
+| 37 | 183 | 052404 | 1017 |
+|--|--|--|--|
+| State | County | Tract | Block |
 
 ### File locations
 | File name | File type | Data dictionary |
