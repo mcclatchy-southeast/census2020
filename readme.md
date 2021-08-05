@@ -1,4 +1,3 @@
-
 # Preparing for Census 2020
 By Aug. 16, the U.S. Census Bureau will release the [2020 redistricting data summary (P.L. 94-171)](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html), its nationwide file created for use by state legislatures to in their decennial redraw of congressional and legislative lines.
 
@@ -19,6 +18,12 @@ For more details on the data and related methodology, [check out the readme file
 [**2010 race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level. *NOTE: These totals are directly from the 2010 Census redistricting file and not weighted or aggregated based on the block assignment file.*
 
 [**2010 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the place summary level. *NOTE: These totals are directly from the 2010 Census redistricting file and not weighted or aggregated based on the block assignment file.*
+
+**2010 diversity index, weighted/aggregated to 2020 tracts** *COMING SOON*
+
+**2010 diversity index, by county** *COMING SOON*
+
+**2010 diversity index, by place** *COMING SOON*
 
 ## Quick reference
 
