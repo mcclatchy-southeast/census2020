@@ -1,3 +1,4 @@
+
 # Data files for the 2020 Census
 Right-click on "Download" below to save these files to your desktop in comma-separated value format.
 
@@ -145,3 +146,21 @@ Select columns from 2010 population counts of race and ethnicity on the county s
 ## 2010 race and ethnicity, by place
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_places_2010_rc_eth.csv)
 Select columns from 2010 population counts of race and ethnicity on the place summary level.  _NOTE: These totals are directly from the 2010 Census redistricting file and not weighted or aggregated based on the block assignment file._
+
+---
+
+## 2010 Mississippi race and ethnicity, by county
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ms_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/ms_county_2010_rc_eth.csv)
+Select columns from 2010 population counts of race and ethnicity on the county summary level for Mississippi.
+
+## 2010 Georgia race and ethnicity, by county
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ga_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/ga_county_2010_rc_eth.csv)
+Select columns from 2010 population counts of race and ethnicity on the county summary level for Georgia.
+
+## 2010 South Carolina race and ethnicity, by county
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/sc_county_2010_rc_eth.csv)
+Select columns from 2010 population counts of race and ethnicity on the county summary level for South Carolina.
+
+## 2010 Alabama race and ethnicity, by county
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/al_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/al_county_2010_rc_eth.csv)
+Select columns from 2010 population counts of race and ethnicity on the county summary level for Alabama.

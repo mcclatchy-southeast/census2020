@@ -1,3 +1,4 @@
+
 # Preparing for Census 2020
 On Aug. 12, the U.S. Census Bureau will release the [2020 redistricting data summary (P.L. 94-171)](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html), its nationwide file created for use by state legislatures in their decennial redraw of congressional and legislative lines.
 
@@ -77,12 +78,12 @@ The Census uses [geographic identifiers](https://www.census.gov/programs-surveys
 | [2020 Name lookup tables](https://www.census.gov/geographies/reference-files/time-series/geo/name-lookup-tables.2020.html) | pipe-delimited txt files | [File record layout](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/nlt-record-layouts.html) |
 
 ## Other states
-Resources for other newsrooms in McClatchty Southeast.
+Resources for other newsrooms in McClatchy Southeast.
 
-**2010 Mississippi race and ethnicity, by county** *COMING SOON*
+[**2010 Mississippi race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ms_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Mississippi.
 
-**2010 Georgia race and ethnicity, by county** *COMING SOON*
+[**2010 Georgia race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ga_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Georgia.
 
-**2010 South Carolina race and ethnicity, by county** *COMING SOON*
+[**2010 South Carolina race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for South Carolina.
 
-**2010 Alabama race and ethnicity, by county** *COMING SOON*
+[**2010 Alabama race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/al_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Alabama.
