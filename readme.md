@@ -34,6 +34,7 @@ For more details on the data and related methodology, [check out the readme file
 | 2000 | 8,049,313 | 21.4 |
 | 2010 | 9,535,483 | 18.5 |
 | 2020 | 10,439,388 | 9.5 |
+
 Resident population according to apportionment Census apportionment results from [2020](https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html), [2010](https://www.census.gov/data/tables/2010/dec/2010-apportionment-data.html), [2000](https://www.census.gov/data/tables/2000/dec/2000-apportionment-data.html) and [1990](https://www.census.gov/data/tables/1990/dec/1990-apportionment-data.html).
 
 ### Geographic area changes over time
