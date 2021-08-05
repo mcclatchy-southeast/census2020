@@ -1,5 +1,5 @@
 # Preparing for Census 2020
-By Aug. 16, the U.S. Census Bureau will release the [2020 redistricting data summary (P.L. 94-171)](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html), its nationwide file created for use by state legislatures to in their decennial redraw of congressional and legislative lines.
+On Aug. 12, the U.S. Census Bureau will release the [2020 redistricting data summary (P.L. 94-171)](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html), its nationwide file created for use by state legislatures to in their decennial redraw of congressional and legislative lines.
 
 Accept where noted below, the following information is specific to data for North Carolina.
 
@@ -26,6 +26,15 @@ For more details on the data and related methodology, [check out the readme file
 **2010 diversity index, by place** *COMING SOON*
 
 ## Quick reference
+
+### NC population change over time
+| Year | Population | % change
+|:---|---:|---:|
+| 1990 | 6,628,637 | -- |
+| 2000 | 8,049,313 | 21.4 |
+| 2010 | 9,535,483 | 18.5 |
+| 2020 | 10,439,388 | 9.5 |
+Resident population according to apportionment Census apportionment results from [2020](https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html), [2010](https://www.census.gov/data/tables/2010/dec/2010-apportionment-data.html), [2000](https://www.census.gov/data/tables/2000/dec/2000-apportionment-data.html) and [1990](https://www.census.gov/data/tables/1990/dec/1990-apportionment-data.html).
 
 ### Geographic area changes over time
 | Geography | 2000 count | 2010 count | 2020 count |
