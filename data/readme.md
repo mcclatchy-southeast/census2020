@@ -135,7 +135,7 @@ But here's a look at how those derived totals based on `land_weight` compare on 
 | 37005 | Alleghany | 11155 | 11167.85 | -12.85 | -0.12 |
 | 37185 | Warren | 20972 | 21005.63 | -33.63 | -0.16 |
 | 37035 | Catawba | 154358 | 154867.52 | -509.52 | -0.33 |
-| **Total** | - | **9535483** | **9535455.71** | **27.29** | **0.01** |
+| **Total** | - | **9535483** | **9535455.71** | **27.29** | **0.00** |
 
 ## 2010 race and ethnicity, weighted/aggregated to 2020 tracts
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2010_rc_eth_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_tracts_2010_rc_eth_weighted.csv)
