@@ -1,4 +1,5 @@
 
+
 # Preparing for Census 2020
 On Aug. 12, the U.S. Census Bureau will release the [2020 redistricting data summary (P.L. 94-171)](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html), its nationwide file created for use by state legislatures in their decennial redraw of congressional and legislative lines.
 
@@ -87,3 +88,17 @@ Resources for other newsrooms in McClatchy Southeast.
 [**2010 South Carolina race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for South Carolina.
 
 [**2010 Alabama race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/al_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Alabama.
+
+## Complete coverage
+
+**[**As census wraps up early, NC risks undercounting vulnerable populations, experts say.**](https://www.charlotteobserver.com/news/politics-government/article246452865.html)** *Danielle Chemtob.* Oct. 14, 2020.
+
+**[**Gerrymandering reform advocates cautiously optimistic, despite GOP keeping control in NC.**](https://www.charlotteobserver.com/article246987667.html)** *Will Doran.* Nov. 6, 2020.
+
+[**For first time, Wake County tops Mecklenburg County in estimated NC population. Gavin Off.**](https://www.newsobserver.com/news/state/north-carolina/article251183669.html) May 5, 2021.
+
+[**NC adds nearly 1 million residents in a decade to earn a new congressional seat, Census says.**](https://www.newsobserver.com/news/politics-government/article250944864.html) *Brian Murphy and Richard Stradling.* May 14, 2021.
+
+[**New census data will help shape elections, reveal who North Carolina is becoming.**](https://www.newsobserver.com/news/politics-government/article253227433.html) *Will Doran and Richard Stradling.* Aug. 10, 2021.
+
+[**NC will redistrict after census data release. Here’s why you should care.**](https://www.newsobserver.com/news/politics-government/article253320118.html) *Will Doran.* Aug. 11, 2021.
