@@ -1,22 +1,22 @@
 # File: story_recipe_pl94171.R
-# Author: Rebecca Tippett, Carolina Demography (demography@unc.edu)
+# Author: Rebecca Tippett, Carolina Demography (demography@unc.edu) (building from pl_all_4_2020_dar.r file released by U.S. Census Bureau (lines 11-503))
 # Data: 8/11/2021
 
 # -----------------------------
 # Set Working Directory and Install Libraries
 # -----------------------------
-setwd("C:/Users/rtippett/University of North Carolina at Chapel Hill/2020 NC Redistricting - Documents/General/Legacy Format/R Versions")
+setwd("Directory Name")
 library(dplyr)
 
 # -----------------------------
 # Specify location of the files
 # -----------------------------
-# Note: This data is for Rhode Island from the Prototype redistricting data produced from the 2018 End-to-End Census Test
-# For 2020 Census, download appropriate files from: https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/ (available 8/12/2021 at 13:00 EST)
-header_file_path <- "rigeo2018_2020style.pl"
-part1_file_path  <- "ri000012018_2020Style.pl"
-part2_file_path  <- "ri000022018_2020Style.pl"
-part3_file_path  <- "ri000032018_2020Style.pl"
+# For 2020 Census, download appropriate files from: https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/ 
+# These files should be (available 8/12/2021 at 13:00 EST)
+header_file_path <- "GEO HEADER FILE"
+part1_file_path  <- "SEGMENT 1 FILE"
+part2_file_path  <- "SEGMENT 2 FILE"
+part3_file_path  <- "SEGMENT 3 FILE"
 
 # -----------------------------
 # Import the data
