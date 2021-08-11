@@ -1,5 +1,3 @@
-
-
 # Preparing for Census 2020
 On Aug. 12, the U.S. Census Bureau will release the [2020 redistricting data summary (P.L. 94-171)](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html), its nationwide file created for use by state legislatures in their decennial redraw of congressional and legislative lines.
 
@@ -81,13 +79,53 @@ The Census uses [geographic identifiers](https://www.census.gov/programs-surveys
 ## Other states
 Resources for other newsrooms in McClatchy Southeast.
 
-[**2010 Mississippi race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ms_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Mississippi.
+### South Carolina
 
-[**2010 Georgia race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ga_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Georgia.
+**2010 population:** 4,625,364
+**2020 population:** [5,118,425](https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html)
+**Counties:** 46
+**2010 place count:** 395
+[SOURCE](https://www.census.gov/geographies/reference-files/2010/geo/state-local-geo-guides-2010/south-carolina.html)
 
-[**2010 South Carolina race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for South Carolina.
+[**2010 race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for South Carolina.
 
-[**2010 Alabama race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/al_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Alabama.
+[**2010 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_place_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the place summary level for South Carolina.
+
+### Mississippi
+
+**2010 population:** 2,967,297
+**2020 population:** [2,961,279](https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html)
+**Counties:** 82
+**2010 place count:** 362
+[SOURCE](https://www.census.gov/geographies/reference-files/2010/geo/state-local-geo-guides-2010/mississippi.html)
+
+[**2010 race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ms_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Mississippi.
+
+[**2010 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ms_place_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the place summary level for Mississippi.
+
+### Georgia
+
+**2010 population:** 9,687,653
+**2020 population:** [10,711,908](https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html)
+**Counties:** 159
+**2010 place count:** 624
+[SOURCE](https://www.census.gov/geographies/reference-files/2010/geo/state-local-geo-guides-2010/georgia.html)
+
+[**2010 race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ga_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Georgia.
+
+[**2010 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ga_place_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the place summary level for Georgia.
+
+### Alabama
+
+**2010 population:** 4,779,736
+**2020 population:** [5,024,279](https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html)
+**Counties:** 67
+**2010 place count:** 578
+[SOURCE](https://www.census.gov/geographies/reference-files/2010/geo/state-local-geo-guides-2010/alabama.html)
+
+[**2010 race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/al_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for Alabama.
+
+[**2010 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/al_place_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the place summary level for Alabama.
 
 ## Complete coverage
 
