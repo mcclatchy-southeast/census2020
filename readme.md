@@ -25,6 +25,10 @@ For more details on the data and related methodology, [check out the readme file
 
 **2010 diversity index, by place** *COMING SOON*
 
+## Story recipes
+
+The team at Carolina Demography put together [a great (still in-progress) how-to guide](https://www.ncdemography.org/2021/08/11/census-2020-story-recipe-how-to-find-and-explore-census-data/) on using R to work with the 2020 census redistricting data, [including sample scripts](https://github.com/mcclatchy-southeast/census2020/blob/main/scripts/story_recipe_pl94171.R) you can use to get started.
+
 ## Quick reference
 
 ### NC population change over time
