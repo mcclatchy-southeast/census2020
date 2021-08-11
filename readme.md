@@ -1,3 +1,4 @@
+
 # Preparing for Census 2020
 On Aug. 12, the U.S. Census Bureau will release the [2020 redistricting data summary (P.L. 94-171)](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html), its nationwide file created for use by state legislatures in their decennial redraw of congressional and legislative lines.
 
@@ -28,6 +29,8 @@ For more details on the data and related methodology, [check out the readme file
 ## Story recipes
 
 The team at Carolina Demography put together [a great (still in-progress) how-to guide](https://www.ncdemography.org/2021/08/11/census-2020-story-recipe-how-to-find-and-explore-census-data/) on using R to work with the 2020 census redistricting data, [including sample scripts](https://github.com/mcclatchy-southeast/census2020/blob/main/scripts/story_recipe_pl94171.R) you can use to get started.
+
+You can also take a look at the [McClatchy team's own R scripts](https://github.com/mcclatchy-southeast/census2020/blob/main/scripts/mcc_sample_scripts.R) for loading in and cleaning up the data.
 
 ## Quick reference
 
@@ -137,14 +140,17 @@ Resources for other newsrooms in McClatchy Southeast.
 
 ## Complete coverage
 
-**[**As census wraps up early, NC risks undercounting vulnerable populations, experts say.**](https://www.charlotteobserver.com/news/politics-government/article246452865.html)** *Danielle Chemtob.* Oct. 14, 2020.
+[**NC lawmakers move to bar the use of racial, election data in drawing election districts**
+](https://www.newsobserver.com/news/politics-government/article253397675.html) *Lucille Sherman.* Aug. 11, 2021.
 
-**[**Gerrymandering reform advocates cautiously optimistic, despite GOP keeping control in NC.**](https://www.charlotteobserver.com/article246987667.html)** *Will Doran.* Nov. 6, 2020.
-
-[**For first time, Wake County tops Mecklenburg County in estimated NC population. Gavin Off.**](https://www.newsobserver.com/news/state/north-carolina/article251183669.html) May 5, 2021.
-
-[**NC adds nearly 1 million residents in a decade to earn a new congressional seat, Census says.**](https://www.newsobserver.com/news/politics-government/article250944864.html) *Brian Murphy and Richard Stradling.* May 14, 2021.
+[**NC will redistrict after census data release. Here’s why you should care.**](https://www.newsobserver.com/news/politics-government/article253320118.html) *Will Doran.* Aug. 11, 2021.
 
 [**New census data will help shape elections, reveal who North Carolina is becoming.**](https://www.newsobserver.com/news/politics-government/article253227433.html) *Will Doran and Richard Stradling.* Aug. 10, 2021.
 
-[**NC will redistrict after census data release. Here’s why you should care.**](https://www.newsobserver.com/news/politics-government/article253320118.html) *Will Doran.* Aug. 11, 2021.
+[**NC adds nearly 1 million residents in a decade to earn a new congressional seat, Census says.**](https://www.newsobserver.com/news/politics-government/article250944864.html) *Brian Murphy and Richard Stradling.* May 14, 2021.
+
+[**For first time, Wake County tops Mecklenburg County in estimated NC population. Gavin Off.**](https://www.newsobserver.com/news/state/north-carolina/article251183669.html) May 5, 2021.
+
+[**Gerrymandering reform advocates cautiously optimistic, despite GOP keeping control in NC.**](https://www.charlotteobserver.com/article246987667.html) *Will Doran.* Nov. 6, 2020.
+
+[**As census wraps up early, NC risks undercounting vulnerable populations, experts say.**](https://www.charlotteobserver.com/news/politics-government/article246452865.html) *Danielle Chemtob.* Oct. 14, 2020.
