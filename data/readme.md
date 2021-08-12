@@ -150,6 +150,11 @@ Select columns from 2010 population counts of race and ethnicity, remapped to 20
 
 Select columns from 2010 population counts of race and ethnicity on the county summary level.  _NOTE: These totals are directly from the 2010 Census redistricting file and not weighted or aggregated based on the block assignment file._
 
+## 2020 race and ethnicity, by county
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2020_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_county_2020_rc_eth.csv)
+
+Select columns from 2020 population counts of race and ethnicity on the county summary level.
+
 ## 2010 race and ethnicity, by place
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_places_2010_rc_eth.csv)
 
