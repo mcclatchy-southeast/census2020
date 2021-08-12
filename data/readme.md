@@ -1,13 +1,16 @@
 
+
 # Data files for the 2020 Census
 Right-click on "Download" below to save these files to your desktop in comma-separated value format.
 
 ## NC block assignment file, with weights
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_baf_2010_2010_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_baf_2010_2010_weighted.csv)
+
 Used to remap 2010 population counts to the redrawn 2020 block for aggregation up to the tract level. Weights are calculated using the intersection of each 2010 block with the 2020 block divided by the total area of the 2010 block (  `AREALAND_INT`  /  `AREALAND_2010`  ) for all 2010 blocks split into parts ( `BLOCK_PART_FLAG_O == 'p'` ). *NOTE: NHGIS on Aug. 9 [published identical figures](https://www.nhgis.org/nhgis-news#crosswalks-2021-08a) used to translate 2010 blocks to 2020 blocks here (free with signup).*
 
 ## 2010 race and ethnicity, weighted to 2020 blocks
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_blocks_2010_rc_eth_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_blocks_2010_rc_eth_weighted.csv)
+
 Select columns from 2010 population counts of race and ethnicity, remapped to 2020 block shapes using land area weights from the block assignment file. Used for aggregation up to large geographies.  _NOTE: The U.S. Census Bureau advises that  [due to noise in the block-level values](https://www.census.gov/newsroom/blogs/director/2021/07/redistricting-data.html), data should be aggregated to higher levels, like block groups or tracts._
 
 ### Methodology
@@ -139,30 +142,98 @@ But here's a look at how those derived totals based on `land_weight` compare on 
 
 ## 2010 race and ethnicity, weighted/aggregated to 2020 tracts
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2010_rc_eth_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_tracts_2010_rc_eth_weighted.csv)
+
 Select columns from 2010 population counts of race and ethnicity, remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts. *NOTE: Some tracts include fractional values in population totals due to the weights applied at the block level. For more details on the methodology, see [the section in the file on 2010 race and ethnicity, weighted to 2020 blocks](https://github.com/mcclatchy-southeast/census2020/tree/main/data#methodology).*
 
 ## 2010 race and ethnicity, by county
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_county_2010_rc_eth.csv)
+
 Select columns from 2010 population counts of race and ethnicity on the county summary level.  _NOTE: These totals are directly from the 2010 Census redistricting file and not weighted or aggregated based on the block assignment file._
 
 ## 2010 race and ethnicity, by place
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_places_2010_rc_eth.csv)
+
 Select columns from 2010 population counts of race and ethnicity on the place summary level.  _NOTE: These totals are directly from the 2010 Census redistricting file and not weighted or aggregated based on the block assignment file._
 
 ---
 
 ## 2010 Mississippi race and ethnicity, by county
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ms_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/ms_county_2010_rc_eth.csv)
+
 Select columns from 2010 population counts of race and ethnicity on the county summary level for Mississippi.
 
 ## 2010 Georgia race and ethnicity, by county
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/ga_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/ga_county_2010_rc_eth.csv)
+
 Select columns from 2010 population counts of race and ethnicity on the county summary level for Georgia.
 
 ## 2010 South Carolina race and ethnicity, by county
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/sc_county_2010_rc_eth.csv)
+
 Select columns from 2010 population counts of race and ethnicity on the county summary level for South Carolina.
 
 ## 2010 Alabama race and ethnicity, by county
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/al_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/al_county_2010_rc_eth.csv)
+
 Select columns from 2010 population counts of race and ethnicity on the county summary level for Alabama.
+
+## Race/ethnicity data dictionary
+
+The following fields apply to most of the race and ethnicity files above.
+
+| Field name           | Census code | Description                                                                                                                                     |
+|----------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| fips                 | geocode     | Unique identifier for the given summary level                                                                                                   |
+| county/place         |     #N/A    | County or place name                                                                                                                                     |
+| state                |     #N/A    | State name                                                                                                                                      |
+| total                | P0010001    | Total population                                                                                                                                |
+| rc_white             | P0010003    | Race: Population of one race: White alone                                                                                                       |
+| rc_black             | P0010004    | Race: Population of one race: Black of African American alone                                                                                   |
+| rc_am_indian         | P0010005    | Race: Population of one race: American Indian and Alaska Native alone                                                                           |
+| rc_asian             | P0010006    | Race: Population of one race: Asian alone                                                                                                       |
+| rc_pac_isl           | P0010007    | Race: Population of one race: Native Hawaiian and other Pacific Islander alone                                                                  |
+| rc_other             | P0010008    | Race: Population of one race: Some other race alone                                                                                             |
+| rc_multi             | P0010009    | Race: Population two or more races                                                                                                              |
+| eth_hispanic         | P0020002    | Ethnicity: Hispanic or Latino                                                                                                                   |
+| eth_non_hisp         | P0020003    | Ethnicity: Not Hispanic or Latino                                                                                                               |
+| eth_white_nh         | P0020005    | Ethnicity: Not Hispanic or Latino: Population of one race: White alone                                                                          |
+| eth_black_nh         | P0020006    | Ethnicity: Not Hispanic or Latino: Population of one race: Black of African American alone                                                      |
+| eth_am_indian_nh     | P0020007    | Ethnicity: Not Hispanic or Latino: Population of one race: American Indian and Alaska Native alone                                              |
+| eth_asian_nh         | P0020008    | Ethnicity: Not Hispanic or Latino: Population of one race: Asian alone                                                                          |
+| eth_pac_isl_nh       | P0020009    | Ethnicity: Not Hispanic or Latino: Population of one race: Native Hawaiian and other Pacific Islander alone                                     |
+| eth_other_nh         | P0020010    | Ethnicity: Not Hispanic or Latino: Population of one race: Some other race alone                                                                |
+| eth_mult_nh          | P0020011    | Ethnicity: Not Hispanic or Latino: Population of one race: Population two or more races                                                         |
+| total_raw            |     #N/A    | Raw change in total population from 2010 to 2020                                                                                                |
+| rc_white_raw         |     #N/A    | Raw change in race: population of one race: white alone from 2010 to 2020                                                                       |
+| rc_black_raw         |     #N/A    | Raw change in race: population of one race: black of african american alone from 2010 to 2020                                                   |
+| rc_am_indian_raw     |     #N/A    | Raw change in race: population of one race: american indian and alaska native alone from 2010 to 2020                                           |
+| rc_asian_raw         |     #N/A    | Raw change in race: population of one race: asian alone from 2010 to 2020                                                                       |
+| rc_pac_isl_raw       |     #N/A    | Raw change in race: population of one race: native hawaiian and other pacific islander alone from 2010 to 2020                                  |
+| rc_other_raw         |     #N/A    | Raw change in race: population of one race: some other race alone from 2010 to 2020                                                             |
+| rc_multi_raw         |     #N/A    | Raw change in race: population two or more races from 2010 to 2020                                                                              |
+| eth_hispanic_raw     |     #N/A    | Raw change in ethnicity: hispanic or latino from 2010 to 2020                                                                                   |
+| eth_non_hisp_raw     |     #N/A    | Raw change in ethnicity: not hispanic or latino from 2010 to 2020                                                                               |
+| eth_white_nh_raw     |     #N/A    | Raw change in ethnicity: not hispanic or latino: population of one race: white alone from 2010 to 2020                                          |
+| eth_black_nh_raw     |     #N/A    | Raw change in ethnicity: not hispanic or latino: population of one race: black of african american alone from 2010 to 2020                      |
+| eth_am_indian_nh_raw |     #N/A    | Raw change in ethnicity: not hispanic or latino: population of one race: american indian and alaska native alone from 2010 to 2020              |
+| eth_asian_nh_raw     |     #N/A    | Raw change in ethnicity: not hispanic or latino: population of one race: asian alone from 2010 to 2020                                          |
+| eth_pac_isl_nh_raw   |     #N/A    | Raw change in ethnicity: not hispanic or latino: population of one race: native hawaiian and other pacific islander alone from 2010 to 2020     |
+| eth_other_nh_raw     |     #N/A    | Raw change in ethnicity: not hispanic or latino: population of one race: some other race alone from 2010 to 2020                                |
+| eth_mult_nh_raw      |     #N/A    | Raw change in ethnicity: not hispanic or latino: population of one race: population two or more races from 2010 to 2020                         |
+| total_pct            |     #N/A    | Percent change in total population from 2010 to 2020                                                                                            |
+| rc_white_pct         |     #N/A    | Percent change in race: population of one race: white alone from 2010 to 2020                                                                   |
+| rc_black_pct         |     #N/A    | Percent change in race: population of one race: black of african american alone from 2010 to 2020                                               |
+| rc_am_indian_pct     |     #N/A    | Percent change in race: population of one race: american indian and alaska native alone from 2010 to 2020                                       |
+| rc_asian_pct         |     #N/A    | Percent change in race: population of one race: asian alone from 2010 to 2020                                                                   |
+| rc_pac_isl_pct       |     #N/A    | Percent change in race: population of one race: native hawaiian and other pacific islander alone from 2010 to 2020                              |
+| rc_other_pct         |     #N/A    | Percent change in race: population of one race: some other race alone from 2010 to 2020                                                         |
+| rc_multi_pct         |     #N/A    | Percent change in race: population two or more races from 2010 to 2020                                                                          |
+| eth_hispanic_pct     |     #N/A    | Percent change in ethnicity: hispanic or latino from 2010 to 2020                                                                               |
+| eth_non_hisp_pct     |     #N/A    | Percent change in ethnicity: not hispanic or latino from 2010 to 2020                                                                           |
+| eth_white_nh_pct     |     #N/A    | Percent change in ethnicity: not hispanic or latino: population of one race: white alone from 2010 to 2020                                      |
+| eth_black_nh_pct     |     #N/A    | Percent change in ethnicity: not hispanic or latino: population of one race: black of african american alone from 2010 to 2020                  |
+| eth_am_indian_nh_pct |     #N/A    | Percent change in ethnicity: not hispanic or latino: population of one race: american indian and alaska native alone from 2010 to 2020          |
+| eth_asian_nh_pct     |     #N/A    | Percent change in ethnicity: not hispanic or latino: population of one race: asian alone from 2010 to 2020                                      |
+| eth_pac_isl_nh_pct   |     #N/A    | Percent change in ethnicity: not hispanic or latino: population of one race: native hawaiian and other pacific islander alone from 2010 to 2020 |
+| eth_other_nh_pct     |     #N/A    | Percent change in ethnicity: not hispanic or latino: population of one race: some other race alone from 2010 to 2020                            |
+| eth_mult_nh_pct      |     #N/A    | Percent change in ethnicity: not hispanic or latino: population of one race: population two or more races from 2010 to 2020                     |
