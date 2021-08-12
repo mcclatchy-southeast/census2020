@@ -1,5 +1,5 @@
-
 # Preparing for Census 2020
+![Tract-level map of population changes between 2010 and 2020, according to census data released Aug. 12, 2021.](https://github.com/mcclatchy-southeast/census2020/blob/main/images/nc_tract_change.png)
 On Aug. 12, the U.S. Census Bureau will release the [2020 redistricting data summary (P.L. 94-171)](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html), its nationwide file created for use by state legislatures in their decennial redraw of congressional and legislative lines.
 
 Accept where noted below, the following information is specific to data for North Carolina.
@@ -139,6 +139,21 @@ Resources for other newsrooms in McClatchy Southeast.
 [**2010 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/al_place_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the place summary level for Alabama.
 
 ## Complete coverage
+
+[**2020 Census population data is out. What could it mean for NC’s 14th congressional seat?**](https://www.charlotteobserver.com/news/politics-government/article253419799.html) *Brian Murphy.* Aug. 12, 2021.
+
+
+[**‘We can’t stop the growth.’ These Triangle cities and towns are booming in NC.**](https://www.newsobserver.com/news/local/article253401580.html) *Anna Johnson and David Raynor.* Aug. 12, 2021.
+
+[**Fast-growing Hispanic population helps drive Charlotte-area growth, new census data show.**](https://www.charlotteobserver.com/news/local/article253421459.html) *Will Wright and Gavin Off.* Aug. 12, 2021.
+
+[**Adjust your scorecard: These are NC’s largest cities, new census count says.**](https://www.charlotteobserver.com/news/local/article253396180.html) *Richard Stradling.* Aug. 12, 2021.
+
+[**How has your NC neighborhood grown since 2010? Use this map of census data to find out.**](https://www.newsobserver.com/news/local/article253375248.html) *Tyler Dukes.* Aug. 12, 2021.
+
+[**Triangle, Charlotte led NC population growth while rural counties shrank, census shows.**](https://www.newsobserver.com/news/local/article253388708.html) *Richard Stradling.* Aug. 12, 2021.
+
+[**NC lawmakers will not use racial and election data from the census to draw district maps.**](https://www.newsobserver.com/news/politics-government/article253434564.html) *Lucille Sherman.* Aug. 12, 2021
 
 [**NC lawmakers move to bar the use of racial, election data in drawing election districts**
 ](https://www.newsobserver.com/news/politics-government/article253397675.html) *Lucille Sherman.* Aug. 11, 2021.
