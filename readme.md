@@ -15,11 +15,11 @@ For more details on the data and related methodology, [check out the readme file
 
 [**2020 race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2020_rc_eth.csv) Select columns from 2020 population counts of race and ethnicity on the county summary level.
 
-[**2020 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2020_rc_eth.csv) | Select columns from 2010 population counts of race and ethnicity on the place summary level.
-
-### 2010 data
+[**2020 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2020_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the place summary level.
 
 [**NC block assignment file, with weights**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_baf_2010_2010_weighted.csv) Used to remap 2010 population counts to the redrawn 2020 block for aggregation up to the tract level. Weights are calculated using the intersection of each 2010 block with the 2020 block divided by the total area of the 2010 block ( `AREALAND_INT` / `AREALAND_2010` ) for all 2010 blocks split into parts ( `BLOCK_PART_FLAG_O == 'p'` ). *NOTE: NHGIS on Aug. 9 [published identical figures](https://www.nhgis.org/nhgis-news#crosswalks-2021-08a) used to translate 2010 blocks to 2020 blocks here (free with signup).*
+
+### 2010 data
 
 [**2010 race and ethnicity, weighted to 2020 blocks**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_blocks_2010_rc_eth_weighted.csv) Select columns from 2010 population counts of race and ethnicity, remapped to 2020 block shapes using land area weights from the block assignment file. Used for aggregation up to large geographies. *NOTE: The U.S. Census Bureau advises that [due to noise in the block-level values](https://www.census.gov/newsroom/blogs/director/2021/07/redistricting-data.html), data should be aggregated to higher levels, like block groups or tracts.*
 
