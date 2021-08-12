@@ -146,7 +146,12 @@ Select columns from 2010 population counts of race and ethnicity, remapped to 20
 ## 2020 race and ethnicity, by block
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_blocks_2020_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_blocks_2020_rc_eth.csv)
 
-Select columns from 2010 population counts of race and ethnicity on the block summary level.
+Select columns from 2020 population counts of race and ethnicity on the block summary level.
+
+## 2020 race and ethnicity, by tract
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2020_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_tracts_2020_rc_eth.csv)
+
+Select columns from 2020 population counts of race and ethnicity on the tract summary level.
 
 ## 2010 race and ethnicity, by county
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_county_2010_rc_eth.csv)
