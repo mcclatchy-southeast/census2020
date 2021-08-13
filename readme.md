@@ -25,9 +25,9 @@ For more details on the data and related methodology, [check out the readme file
 
 [**2010 and 2020 diversity index comparisons, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_place_2010_2020_diversity_index.csv) Place-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
 
-**2020 race and ethnicity, weighted/aggregated to 117th congressional districts** *COMING SOON*
+[**2010 and 2020 diversity index comparisons, weighted/aggregated to 2020 tracts**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2010_2020_diversity_index.csv) Tract-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Population data from 2010 is remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
 
-**2020 diversity index, weighted/aggregated to 2020 tracts** *COMING SOON*
+**2020 race and ethnicity, weighted/aggregated to 117th congressional districts** *COMING SOON*
 
 ### 2010 data
 
@@ -162,8 +162,10 @@ Resources for other newsrooms in McClatchy Southeast.
 
 ## Complete coverage
 
-[**2020 Census population data is out. What could it mean for NC’s 14th congressional seat?**](https://www.charlotteobserver.com/news/politics-government/article253419799.html) *Brian Murphy.* Aug. 12, 2021.
+[**Many NC congressional districts are overpopulated. Here’s a look before redistricting.**
+](https://www.newsobserver.com/news/politics-government/article253469449.html) *Brian Murphy and David Raynor.* Aug. 13, 2021.
 
+[**2020 Census population data is out. What could it mean for NC’s 14th congressional seat?**](https://www.charlotteobserver.com/news/politics-government/article253419799.html) *Brian Murphy.* Aug. 12, 2021.
 
 [**‘We can’t stop the growth.’ These Triangle cities and towns are booming in NC.**](https://www.newsobserver.com/news/local/article253401580.html) *Anna Johnson and David Raynor.* Aug. 12, 2021.
 

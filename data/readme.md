@@ -183,6 +183,11 @@ County-level calculation of the diversity index, a value from 0 to 1 indicating 
 
 Place-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
 
+## 2010 and 2020 diversity index comparisons, weighted/aggregated to 2020 tracts
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2010_2020_diversity_index.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_tracts_2010_2020_diversity_index.csv) 
+
+Tract-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Population data from 2010 is remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
+
 ---
 
 ## 2010 Mississippi race and ethnicity, by county
