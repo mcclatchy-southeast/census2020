@@ -37,7 +37,8 @@ library(tidyverse)
 #load the janitor library to effortlessly clean up things like headers
 library(janitor)
 
-# Create loading functions to import the data -----------------------------
+
+# Create loading functions to import 2020 data ----------------------------
 
 #these functions will allow us to import data from multiple states without
 #changing variables or repeating code again and again.
@@ -50,7 +51,7 @@ library(janitor)
 #geoheader file
 #
 #usage
-#load_header('file_path/nc_geoheader.pl', 'nc')
+#load_header2020('file_path/nc_geoheader.pl', 'nc')
 load_header2020 <- function(path, state_code){
   state_code <- tolower(state_code)
   assign( paste0('geo_header_', state_code, '2020'),
@@ -119,7 +120,8 @@ load_group_quarters2020 <- function(path, state_code){
   )
 }
 
-# Create table generating functions ---------------------------------------
+
+# Create table generating functions for 2020 ------------------------------
 
 #these functions will allow us to generate tables of data based on summary level
 #and state (for example on the state, county, or block level)
@@ -127,7 +129,7 @@ load_group_quarters2020 <- function(path, state_code){
 #build table for select race/ethnicity fields, based on state code and summary level
 #assumes header and race/ethnicity files are already loaded into memory
 #usage:
-#gen_race_ethnicity('nc', '040')
+#gen_race_ethnicity2020('nc', '040')
 #
 #field layout
 #geocode -- Unique identifier for the given summary level
@@ -148,7 +150,7 @@ load_group_quarters2020 <- function(path, state_code){
 #eth_pac_isl_nh (P0020009) -- Ethnicity: Not Hispanic or Latino: Population of one race: Native Hawaiian and other Pacific Islander alone
 #eth_other_nh (P0020010) -- Ethnicity: Not Hispanic or Latino: Population of one race: Some other race alone
 #eth_mult_nh (P0020011) -- Ethnicity: Not Hispanic or Latino: Population of one race: Population two or more races
-gen_race_ethnicity <- function(state_code, sumlev_code){
+gen_race_ethnicity2020 <- function(state_code, sumlev_code){
   eval( parse( text = paste0('geo_header_', state_code ,'2020') ) ) %>% 
     filter(sumlev == sumlev_code) %>%
     select(logrecno, geocode) %>%
@@ -185,7 +187,7 @@ gen_race_ethnicity <- function(state_code, sumlev_code){
 #based on state code and summary level
 #assumes header and race/ethnicity files are already loaded into memory
 #usage:
-#gen_vap('nc', '040')
+#gen_vap2020('nc', '040')
 #
 #field layout
 #geocode -- Unique identifier for the given summary level
@@ -206,7 +208,7 @@ gen_race_ethnicity <- function(state_code, sumlev_code){
 #eth_pac_isl_nh_vap (P0040009) -- Ethnicity: Not Hispanic or Latino: Voting-age population of one race: Native Hawaiian and other Pacific Islander alone
 #eth_other_nh_vap (P0040010) -- Ethnicity: Not Hispanic or Latino: Voting-age population of one race: Some other race alone
 #eth_mult_nh_vap (P0040011) -- Ethnicity: Not Hispanic or Latino: Voting-age population of one race: Voting-age population two or more races
-gen_vap <- function(state_code, sumlev_code){
+gen_vap2020 <- function(state_code, sumlev_code){
   eval( parse( text = paste0('geo_header_', state_code ,'2020') ) ) %>% 
     filter(sumlev == sumlev_code) %>%
     select(logrecno, geocode) %>%
@@ -243,14 +245,14 @@ gen_vap <- function(state_code, sumlev_code){
 #based on state code and summary level
 #assumes header and race/ethnicity files are already loaded into memory
 #usage:
-#gen_housing('nc', '040')
+#gen_housing2020('nc', '040')
 #
 #field layout
 #geocode -- Unique identifier for the given summary level
 #hs_total (H0010001) -- Total housing units
 #hs_occupied (H0010002) -- Occupied housing units
 #hs_vacant (H0010003) -- Vacant housing 
-gen_housing <- function(state_code, sumlev_code){
+gen_housing2020 <- function(state_code, sumlev_code){
   eval( parse( text = paste0('geo_header_', state_code ,'2020') ) ) %>% 
     filter(sumlev == sumlev_code) %>%
     select(logrecno, geocode) %>%
@@ -269,7 +271,7 @@ gen_housing <- function(state_code, sumlev_code){
 #based on state code and summary level
 #assumes header and race/ethnicity files are already loaded into memory
 #usage:
-#gen_group_quarters('nc', '040')
+#gen_group_quarters2020('nc', '040')
 #
 #field layout
 #geocode -- Unique identifier for the given summary level
@@ -283,7 +285,7 @@ gen_housing <- function(state_code, sumlev_code){
 #gq_college (P0050008) -- College/University student housing
 #gq_military (P0050009) -- Military quarters
 #gq_other_noninst (P0050010) -- Other noninstitutional facilities
-gen_group_quarters <- function(state_code, sumlev_code){
+gen_group_quarters2020 <- function(state_code, sumlev_code){
   eval( parse( text = paste0('geo_header_', state_code ,'2020') ) ) %>% 
     filter(sumlev == sumlev_code) %>%
     select(logrecno, geocode) %>%
@@ -306,6 +308,290 @@ gen_group_quarters <- function(state_code, sumlev_code){
       by = 'logrecno')
 }
 
+# Create loading functions for importing 2010 data ------------------------
+
+#geoheader file for 2010
+#
+#usage
+#load_header2010('file_path/nc_geoheader.pl', 'nc')
+load_header2010 <- function(path, state_code){
+  state_code <- tolower(state_code)
+  assign( paste0('geo_header_', state_code, '2010'),
+          envir = .GlobalEnv,
+          read_fwf(
+            path,
+            col_types = cols(.default = "c"),
+            progress = show_progress(),
+            trim_ws = TRUE,
+            fwf_cols(
+              fileid = c(1, 6),
+              stusab = c(7, 8),
+              sumlev = c(9, 11),
+              geocomp = c(12, 13),
+              chariter = c(14, 16),
+              cifsn = c(17, 18),
+              logrecno = c(19, 25),
+              region = c(26, 26),
+              division = c(27, 27),
+              state = c(28, 29),
+              county = c(30, 32),
+              countycc = c(33, 34),
+              countysc = c(35, 36),
+              cousub = c(37, 41),
+              cousubcc = c(42, 43),
+              cousubsc = c(44, 45),
+              place = c(46, 50),
+              placecc = c(51, 52),
+              placesc = c(53, 54),
+              tract = c(55, 60),
+              blkgrp = c(61, 61),
+              block = c(62, 65),
+              iuc = c(66, 67),
+              concit = c(68, 72),
+              concitcc = c(73, 74),
+              concitsc = c(75, 76),
+              aianhh = c(77, 80),
+              aianhhfp = c(81, 85),
+              aianhhcc = c(86, 87),
+              aihhtli = c(88, 88),
+              aitsce = c(89, 91),
+              aits = c(92, 96),
+              aitscc = c(97, 98),
+              ttract = c(99, 104),
+              tblkgrp = c(105, 105),
+              anrc = c(106, 110),
+              anrccc = c(111, 112),
+              cbsa = c(113, 117),
+              cbsasc = c(118, 119),
+              metdic = c(120, 124),
+              csa = c(125, 127),
+              necta = c(128, 132),
+              nectasc = c(133, 134),
+              nectadeiv = c(135, 139),
+              cnecta = c(140, 142),
+              cbsapci = c(143, 143),
+              nectapci = c(144, 144),
+              ua = c(145, 149),
+              uasc = c(150, 151),
+              uatype = c(152, 152),
+              ur = c(153, 153),
+              cd = c(154, 155),
+              sldu = c(156, 158),
+              sldl = c(159, 161),
+              vtd = c(162, 167),
+              vtdi = c(168, 168),
+              reserve2 = c(169, 171),
+              zcta5 = c(172, 176),
+              submcd = c(177, 181),
+              submcdcc = c(182, 183),
+              sdelm = c(184, 188),
+              sdsec = c(189, 193),
+              sduni = c(194, 198),
+              arealand = c(199, 212),
+              areawater = c(213, 226),
+              name = c(227, 316),
+              funcstat = c(317, 317),
+              gcuni = c(318, 318),
+              pop100 = c(319, 327),
+              hu100 = c(328, 336),
+              intptlat = c(337, 347),
+              intptlon = c(348, 359),
+              lsadc = c(360, 361),
+              partflag = c(362, 362),
+              reserve3 = c(363, 368),
+              uga = c(369, 373),
+              statens = c(374, 381),
+              countyns = c(382, 389),
+              cousubns = c(390, 397),
+              placens = c(398, 405),
+              concitns = c(406, 413),
+              aianhhns = c(414, 421),
+              aitsns = c(422, 429),
+              anrcns = c(430, 437),
+              submcdns = c(438, 445),
+              cd113 = c(446, 447),
+              cd114 = c(448, 449),
+              cd115 = c(450, 451),
+              sldu2 = c(452, 454),
+              sldu3 = c(455, 457),
+              sldu4 = c(458, 460),
+              sldl2 = c(461, 463),
+              sldl3 = c(464, 466),
+              sldl4 = c(467, 469),
+              aianhhsc = c(470, 471),
+              csasc = c(472, 473),
+              cnectasc = c(474, 475),
+              memi = c(476, 476),
+              nmemi = c(477, 477),
+              puma = c(478, 482),
+              reserved = c(483, 500)
+            ) 
+          ) %>%
+            clean_names(case = 'snake')
+  )
+}
+
+#race and ethnicity file
+#
+#usage
+#load_race_ethnicity2010(file_path/nc_geoheader.pl', 'nc')
+load_race_ethnicity2010 <- function(path, state_code){
+  state_code <- tolower(state_code)
+  assign( paste0('race_ethnicity_', state_code, '2010'),
+          envir = .GlobalEnv,
+          read_csv(
+            path,
+            col_types = cols(.default = "c"),
+            col_names = c("FILEID", "STUSAB", "CHARITER", "CIFSN", "LOGRECNO", 
+                          paste0("P00", c(10001:10071, 20001:20073)))
+          ) %>% 
+            clean_names(case = 'snake')
+  )
+}
+
+#race and ethnicity file
+#
+#usage
+#load_vap_housing2010('file_path/nc_vaphousing.pl', 'nc')
+load_vap_housing2010 <- function(path, state_code){
+  state_code <- tolower(state_code)
+  assign( paste0('vap_housing_', state_code, '2010'),
+          envir = .GlobalEnv,
+          read_csv(
+            path,
+            col_types = cols(.default = "c"),
+            col_names = c("FILEID", "STUSAB", "CHARITER", "CIFSN", "LOGRECNO", 
+                          paste0("P00", c(30001:30071, 40001:40073)), 
+                          paste0("H00", 10001:10003))
+          ) %>% 
+            clean_names(case = 'snake')
+  )
+}
+
+
+# Create table generating functions for 2010 ------------------------------
+
+#usage
+#gen_race_ethnicity2010('nc','140')
+gen_race_ethnicity2010 <- function(state_code, sumlev_code){
+  eval( parse( text = paste0('geo_header_', state_code ,'2010') ) ) %>% 
+    filter(sumlev == sumlev_code) %>%
+    mutate(geocode = paste0( state, county,
+                             ifelse(sumlev == '160', place, ''),
+                             ifelse(sumlev == '140' | sumlev == '750', tract, ''),
+                             ifelse(sumlev == '750', block, '')
+    ) 
+    ) %>% 
+    select(logrecno, geocode) %>%
+    left_join(
+      eval( parse( text = paste0('race_ethnicity_', state_code ,'2010') ) ) %>%
+        select(logrecno, p0010001, p0010003, p0010004, p0010005, 
+               p0010006, p0010007, p0010008, p0010009,
+               p0020002, p0020003, p0020005, p0020006, p0020007,
+               p0020008, p0020003, p0020009, p0020010, p0020011
+        ) %>% 
+        rename(total = p0010001,
+               rc_white = p0010003,
+               rc_black = p0010004,
+               rc_am_indian = p0010005,
+               rc_asian = p0010006,
+               rc_pac_isl = p0010007,
+               rc_other = p0010008,
+               rc_multi = p0010009,
+               eth_hispanic = p0020002,
+               eth_non_hisp = p0020003,
+               eth_white_nh = p0020005,
+               eth_black_nh = p0020006,
+               eth_am_indian_nh = p0020007,
+               eth_asian_nh = p0020008,
+               eth_pac_isl_nh = p0020009,
+               eth_other_nh = p0020010,
+               eth_mult_nh = p0020011
+        ) %>% 
+        mutate(
+          total = as.integer(total),
+          rc_white = as.integer(rc_white),
+          rc_black = as.integer(rc_black),
+          rc_am_indian = as.integer(rc_am_indian),
+          rc_asian = as.integer(rc_asian),
+          rc_pac_isl = as.integer(rc_pac_isl),
+          rc_other = as.integer(rc_other),
+          rc_multi = as.integer(rc_multi),
+          eth_hispanic = as.integer(eth_hispanic),
+          eth_non_hisp = as.integer(eth_non_hisp),
+          eth_white_nh = as.integer(eth_white_nh),
+          eth_black_nh = as.integer(eth_black_nh),
+          eth_am_indian_nh = as.integer(eth_am_indian_nh),
+          eth_asian_nh = as.integer(eth_asian_nh),
+          eth_pac_isl_nh = as.integer(eth_pac_isl_nh),
+          eth_other_nh = as.integer(eth_other_nh),
+          eth_mult_nh = as.integer(eth_mult_nh)
+        ),
+      by = 'logrecno') %>% 
+    select(-logrecno)
+}
+
+#usaage
+#gen_vap2010('nc','140')
+gen_vap2010 <- function(state_code, sumlev_code){
+  eval( parse( text = paste0('geo_header_', state_code ,'2010') ) ) %>% 
+    filter(sumlev == sumlev_code) %>%
+    mutate(geocode = paste0( state,
+                             ifelse(is.na(county),'', county),
+                             ifelse(is.na(place),'', place),
+                             ifelse(is.na(tract),'', tract),
+                             ifelse(is.na(block),'', block)
+    ) 
+    ) %>% 
+    select(logrecno, geocode) %>%
+    left_join(
+      eval( parse( text = paste0('vap_housing_', state_code ,'2010') ) ) %>%
+        select(logrecno, p0030001, p0030003, p0030004, p0030005, 
+               p0030006, p0030007, p0030008, p0030009,
+               p0040002, p0040003, p0040005, p0040006, p0040007,
+               p0040008, p0040003, p0040009, p0040010, p0040011
+        ) %>% 
+        rename(total_vap = p0030001,
+               rc_white_vap = p0030003,
+               rc_black_vap = p0030004,
+               rc_am_indian_vap = p0030005,
+               rc_asian_vap = p0030006,
+               rc_pac_isl_vap = p0030007,
+               rc_other_vap = p0030008,
+               rc_multi_vap = p0030009,
+               eth_hispanic_vap = p0040002,
+               eth_non_hisp_vap = p0040003,
+               eth_white_nh_vap = p0040005,
+               eth_black_nh_vap = p0040006,
+               eth_am_indian_nh_vap = p0040007,
+               eth_asian_nh_vap = p0040008,
+               eth_pac_isl_nh_vap = p0040009,
+               eth_other_nh_vap = p0040010,
+               eth_mult_nh_vap = p0040011
+        ) %>% 
+        mutate(
+          total_vap =  as.integer(total_vap),
+          rc_white_vap =  as.integer(rc_white_vap),
+          rc_black_vap =  as.integer(rc_black_vap),
+          rc_am_indian_vap =  as.integer(rc_am_indian_vap),
+          rc_asian_vap =  as.integer(rc_asian_vap),
+          rc_pac_isl_vap =  as.integer(rc_pac_isl_vap),
+          rc_other_vap =  as.integer(rc_other_vap),
+          rc_multi_vap =  as.integer(rc_multi_vap),
+          eth_hispanic_vap =  as.integer(eth_hispanic_vap),
+          eth_non_hisp_vap =  as.integer(eth_non_hisp_vap),
+          eth_white_nh_vap =  as.integer(eth_white_nh_vap),
+          eth_black_nh_vap =  as.integer(eth_black_nh_vap),
+          eth_am_indian_nh_vap =  as.integer(eth_am_indian_nh_vap),
+          eth_asian_nh_vap =  as.integer(eth_asian_nh_vap),
+          eth_pac_isl_nh_vap =  as.integer(eth_pac_isl_nh_vap),
+          eth_other_nh_vap =  as.integer(eth_other_nh_vap),
+          eth_mult_nh_vap =  as.integer(eth_mult_nh_vap)
+        ),
+      by = 'logrecno') %>% 
+    select(-logrecno)
+}
+
 # Test with a prototype file ----------------------------------------------
 
 #prior to Aug. 12, the U.S. Census Bureau released prototype files for a single
@@ -325,16 +611,16 @@ load_vap_housing2020( vap_housing_path, 'ri' )
 load_group_quarters2020( group_quarters_path, 'ri' )
 
 #build a race and ethnicity table for the tract level
-gen_race_ethnicity('ri', '140')
+gen_race_ethnicity2020('ri', '140')
 
 #and the county level
-gen_race_ethnicity('ri', '050')
+gen_race_ethnicity2020('ri', '050')
 
 #build a voting age population table by place
-gen_vap('ri', '160')
+gen_vap2020('ri', '160')
 
 #look at occupancy by county
-gen_housing('ri','050')
+gen_housing2020('ri','050')
 
 #look at group quarters by tract
-gen_group_quarters('ri','140')
+gen_group_quarters2020('ri','140')
