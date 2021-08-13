@@ -21,13 +21,13 @@ For more details on the data and related methodology, [check out the readme file
 
 [**NC block assignment file, with weights**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_baf_2010_2010_weighted.csv) Used to remap 2010 population counts to the redrawn 2020 block for aggregation up to the tract level. Weights are calculated using the intersection of each 2010 block with the 2020 block divided by the total area of the 2010 block ( `AREALAND_INT` / `AREALAND_2010` ) for all 2010 blocks split into parts ( `BLOCK_PART_FLAG_O == 'p'` ). *NOTE: NHGIS on Aug. 9 [published identical figures](https://www.nhgis.org/nhgis-news#crosswalks-2021-08a) used to translate 2010 blocks to 2020 blocks here (free with signup).*
 
+[**2010 and 2020 diversity index comparisons, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_2020_diversity_index.csv) County-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
+
+[**2010 and 2020 diversity index comparisons, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_place_2010_2020_diversity_index.csv) Place-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
+
 **2020 race and ethnicity, weighted/aggregated to 117th congressional districts** *COMING SOON*
 
 **2020 diversity index, weighted/aggregated to 2020 tracts** *COMING SOON*
-
-[**2010 and 2020 diversity index comparisons, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_2020_diversity_index.csv) County-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
-
-**2020 diversity index, by place** *COMING SOON*
 
 ### 2010 data
 
