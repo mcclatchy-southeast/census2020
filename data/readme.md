@@ -173,6 +173,11 @@ Select columns from 2010 population counts of race and ethnicity on the place su
 
 Select columns from 2010 population counts of race and ethnicity on the place summary level.
 
+## 2010 and 2020 diversity index comparisons, by county
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_2020_diversity_index.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_county_2010_2020_diversity_index.csv)
+
+County-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
+
 ---
 
 ## 2010 Mississippi race and ethnicity, by county

@@ -25,7 +25,7 @@ For more details on the data and related methodology, [check out the readme file
 
 **2020 diversity index, weighted/aggregated to 2020 tracts** *COMING SOON*
 
-**2020 diversity index, by county** *COMING SOON*
+[**2010 and 2020 diversity index comparisons, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_2020_diversity_index.csv) County-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
 
 **2020 diversity index, by place** *COMING SOON*
 
@@ -77,6 +77,7 @@ More detail on basic Census geographies, counts and other NC-specific informatio
 ### Frequently used summary levels
 | Area type | summary level code |
 |:--|:--|
+| State | 040 |
 | County | 050 |
 | Consolidated city | 170 |
 | Place | 160 |
