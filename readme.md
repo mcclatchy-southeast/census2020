@@ -5,8 +5,6 @@ On Aug. 12, the U.S. Census Bureau will release the [2020 redistricting data sum
 
 Accept where noted below, the following information is specific to data for North Carolina.
 
-*NOTE: The data below is preliminary and for planning purposes.*
-
 ## Data files
 
 For more details on the data and related methodology, [check out the readme file](https://github.com/mcclatchy-southeast/census2020/tree/main/data).
@@ -17,7 +15,7 @@ For more details on the data and related methodology, [check out the readme file
 
 [**2020 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2020_rc_eth.csv) Select columns from 2020 population counts of race and ethnicity on the place summary level.
 
-[**2020 race and ethnicity, by tract**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tract_2020_rc_eth.csv) Select columns from 2020 population counts of race and ethnicity on the tract summary level.
+[**2020 race and ethnicity, by tract**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2020_rc_eth.csv) Select columns from 2020 population counts of race and ethnicity on the tract summary level.
 
 [**2020 race and ethnicity, by block**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_blocks_2020_rc_eth.csv) Select columns from 2020 population counts of race and ethnicity on the block summary level. *NOTE: The U.S. Census Bureau advises that [due to noise in the block-level values](https://www.census.gov/newsroom/blogs/director/2021/07/redistricting-data.html), data should be aggregated to higher levels, like block groups or tracts.* 
 
