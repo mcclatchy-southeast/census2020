@@ -200,10 +200,25 @@ Select columns from 2010 population counts of race and ethnicity on the county s
 
 Select columns from 2010 population counts of race and ethnicity on the county summary level for Georgia.
 
+## 2020 race and ethnicity, by tract
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_tracts_2020_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/sc_tracts_2020_rc_eth.csv)
+
+Select columns from 2020 population counts of race and ethnicity on the tract summary level for South Carolina.
+
 ## 2010 South Carolina race and ethnicity, by county
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/sc_county_2010_rc_eth.csv)
 
 Select columns from 2010 population counts of race and ethnicity on the county summary level for South Carolina.
+
+## 2010 race and ethnicity, by place
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_place_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/sc_place_2010_rc_eth.csv) 
+
+Select columns from 2010 population counts of race and ethnicity on the place summary level for South Carolina.
+
+## 2010 South Carolina race and ethnicity, weighted/aggregated to 2020 tracts
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_tracts_2010_rc_eth_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/sc_tracts_2010_rc_eth_weighted.csv)
+
+Select columns from 2010 population counts of race and ethnicity on the tract summary level for South Carolina, remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts.
 
 ## 2010 Alabama race and ethnicity, by county
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/al_county_2010_rc_eth.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/al_county_2010_rc_eth.csv)

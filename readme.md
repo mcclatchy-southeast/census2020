@@ -117,6 +117,10 @@ Resources for other newsrooms in McClatchy Southeast.
 
 [SOURCE](https://www.census.gov/geographies/reference-files/2010/geo/state-local-geo-guides-2010/south-carolina.html)
 
+[**2020 race and ethnicity, by tract**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_tracts_2020_rc_eth.csv) Select columns from 2020 population counts of race and ethnicity on the tract summary level for South Carolina.
+
+[**2010 race and ethnicity, weighted/aggregated to 2020 tracts**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_tracts_2010_rc_eth_weighted.csv) Select columns from 2010 population counts of race and ethnicity on the tract summary level for South Carolina, remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts.
+
 [**2010 race and ethnicity, by county**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_county_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the county summary level for South Carolina.
 
 [**2010 race and ethnicity, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/sc_place_2010_rc_eth.csv) Select columns from 2010 population counts of race and ethnicity on the place summary level for South Carolina.
