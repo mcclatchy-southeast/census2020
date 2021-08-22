@@ -188,6 +188,46 @@ Place-level calculation of the diversity index, a value from 0 to 1 indicating t
 
 Tract-level calculation of the diversity index, a value from 0 to 1 indicating the probability that two people selected at random would be from different racial/ethnic backgrounds. Population data from 2010 is remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts. Uses categories for `white alone, non-Hispanic`, `black, non-Hispanic`, `American Indian, non-Hispanic`, `Asian, non-Hispanic`, `native Hawaiian or Pacific islander, non-Hispanic`, `other, non-Hispanic`, `two or more races, non-Hispanic` and `Hispanic` in the probability calculation.
 
+## 2020 housing units, by county
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2020_housing.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_county_2020_housing.csv)
+
+Columns from 2020 housing counts on the county summary level.
+
+## 2020 housing units, by place
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2020_housing.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_places_2020_housing.csv)
+
+Columns from 2020 housing counts on the place summary level.
+
+## 2020 housing units, by tract
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2020_housing.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_tracts_2020_housing.csv)
+
+Columns from 2020 housing counts on the tract summary level.
+
+## 2020 housing units, by block
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_blocks_2020_housing.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_blocks_2020_housing.csv)
+
+Columns from 2020 housing counts on the block summary level. *NOTE: The U.S. Census Bureau advises that because housing counts were not subject to processing with differential privacy algorithms, this table is accurate to the block level, but won't be comparable to block level data on race and ethnicity.* 
+
+## 2010 housing units, by county
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_county_2010_housing.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_county_2010_housing.csv) 
+
+Columns from 2010 housing counts on the county summary level.
+
+## 2010 housing units, by place
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2010_housing.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_places_2010_housing.csv) 
+
+Columns from 2010 housing counts on the place summary level.
+
+## 2010 housing units, by tract
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2010_housing_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_tracts_2010_housing_weighted.csv) 
+
+Columns from 2010 housing counts on the tract summary level, remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts.
+
+## 2010 housing units, by block
+[View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_blocks_2010_housing_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_blocks_2010_housing_weighted.csv) 
+
+Columns from 2010 housing counts on the block summary level, remapped to 2020 block shapes using land area weights from the block assignment file.
+
 ---
 
 ## 2010 Mississippi race and ethnicity, by county
@@ -225,9 +265,9 @@ Select columns from 2010 population counts of race and ethnicity on the tract su
 
 Select columns from 2010 population counts of race and ethnicity on the county summary level for Alabama.
 
-## Race/ethnicity data dictionary
+## Shared file data dictionary
 
-The following fields apply to most of the race and ethnicity files above.
+The following fields apply to most of the race and ethnicity and housing files above.
 
 | Field name           | Census code | Description                                                                                                                                     |
 |----------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -251,6 +291,9 @@ The following fields apply to most of the race and ethnicity files above.
 | eth_pac_isl_nh       | P0020009    | Ethnicity: Not Hispanic or Latino: Population of one race: Native Hawaiian and other Pacific Islander alone                                     |
 | eth_other_nh         | P0020010    | Ethnicity: Not Hispanic or Latino: Population of one race: Some other race alone                                                                |
 | eth_mult_nh          | P0020011    | Ethnicity: Not Hispanic or Latino: Population of one race: Population two or more races                                                         |
+| hs_total      |     H0010001    | Total housing units                     |
+| hs_occupied      |     H0010002    | Occupied housing units                     |
+| hs_vacant      |     H0010003    | Vacant housing units                     |
 | total_raw            |     #N/A    | Raw change in total population from 2010 to 2020                                                                                                |
 | rc_white_raw         |     #N/A    | Raw change in race: population of one race: white alone from 2010 to 2020                                                                       |
 | rc_black_raw         |     #N/A    | Raw change in race: population of one race: black of african american alone from 2010 to 2020                                                   |
