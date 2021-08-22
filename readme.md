@@ -51,9 +51,9 @@ For more details on the data and related methodology, [check out the readme file
 
 [**2010 housing units, by place**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_places_2010_housing.csv) Columns from 2010 housing counts on the place summary level.
 
-[**2010 housing units, by tract**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2010_housing_weighted.csv) Columns from 2010 housing counts on the tract summary level, remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts.
+[**2010 housing units, weighted/aggregated to 2020 tracts**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2010_housing_weighted.csv) Columns from 2010 housing counts on the tract summary level, remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts.
 
-[**2010 housing units, by block**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_blocks_2010_housing_weighted.csv) Columns from 2010 housing counts on the block summary level, remapped to 2020 block shapes using land area weights from the block assignment file.
+[**2010 housing units, weighted to 2020 blocks**](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_blocks_2010_housing_weighted.csv) Columns from 2010 housing counts on the block summary level, remapped to 2020 block shapes using land area weights from the block assignment file.
 
 **2010 race and ethnicity, weighted/aggregated to 117th congressional districts** *COMING SOON*
 

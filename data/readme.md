@@ -218,12 +218,12 @@ Columns from 2010 housing counts on the county summary level.
 
 Columns from 2010 housing counts on the place summary level.
 
-## 2010 housing units, by tract
+## 2010 housing units, weighted/aggregated to 2020 tracts
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_tracts_2010_housing_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_tracts_2010_housing_weighted.csv) 
 
 Columns from 2010 housing counts on the tract summary level, remapped to 2020 block shapes using land area weights from the block assignment file and aggregated up to 2020 tracts.
 
-## 2010 housing units, by block
+## 2010 housing units, weighted to 2010 blocks
 [View](https://github.com/mcclatchy-southeast/census2020/blob/main/data/nc_blocks_2010_housing_weighted.csv) | [Download](https://raw.githubusercontent.com/mcclatchy-southeast/census2020/main/data/nc_blocks_2010_housing_weighted.csv) 
 
 Columns from 2010 housing counts on the block summary level, remapped to 2020 block shapes using land area weights from the block assignment file.
